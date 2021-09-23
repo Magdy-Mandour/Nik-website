@@ -5,10 +5,11 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    /* max-width: 960px; */
 }
 /* all images style */
 img{
-    width: 300px;
+    width: 270px;
     height: 120px
 }
 
@@ -17,7 +18,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     height: 150px;
     background-color: purple;
 }
@@ -31,7 +32,6 @@ img{
     padding: 10px;
 }
 .nav-bar {
-    display: flex;
     width: 50%;
 }
 .list{
@@ -40,12 +40,19 @@ img{
     list-style: none;
     padding: 10px;
     align-items: center;
-}
+} 
 .nav-bar a{
     padding: 15px;
     text-decoration: none;
 }
-
+button{
+    background-color: brown;
+    padding: 5px;
+    border-radius: 10%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    width: 105px;
+}
 
 .showcase{
     display: flex;
@@ -103,7 +110,53 @@ img{
     text-decoration: none;
     color: white;
 }
-.social-media{
-    padding: 0px 10px;
+.social-media .fab{
+    padding: 0px 5px;
+}
+@media screen and (max-width: 480px) {
+    .banner{
+        flex-direction: column;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .logo img{
+        display: block;
+        position: relative;
+        right: 40px;
+        padding-bottom: 20px;
+    }
+    .list{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .showcase{
+        flex-direction: column;
+        margin-top: -10px;
+    }
+    .testemonial{
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+        margin: 20px;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .footer li{
+        display: inline-block;
+        padding: 10 5px;
+        margin: 10px 0;
+    }
+    .social-media{
+        margin-top: 10px;
+    }
 }
 
